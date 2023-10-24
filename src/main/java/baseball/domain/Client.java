@@ -20,8 +20,8 @@ public class Client {
 
 	private void initializeNumbers(String input) {
 		numbers = new ArrayList<>();
-		for (int i = 0; i < input.length(); i++) {
-			numbers.add(Character.getNumericValue(input.charAt(i)));
+		for (int index = 0; index < input.length(); index++) {
+			numbers.add(Character.getNumericValue(input.charAt(index)));
 		}
 	}
 

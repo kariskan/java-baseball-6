@@ -21,15 +21,15 @@ public class BaseballService {
 	}
 
 	private void calculateBallAndStrikeCount(Computer computer, Client client) {
-		for (int i = 0; i < computer.getNumbers().size(); i++) {
-			increaseCount(computer, client, i);
+		for (int index = 0; index < computer.getNumbers().size(); index++) {
+			increaseCount(computer, client, index);
 		}
 	}
 
-	private void increaseCount(Computer computer, Client client, Integer i) {
-		if (isStrike(computer, client, i)) {
+	private void increaseCount(Computer computer, Client client, Integer index) {
+		if (isStrike(computer, client, index)) {
 			client.increaseStrikeCount();
-		} else if (isBall(computer, client, i)) {
+		} else if (isBall(computer, client, index)) {
 			client.increaseBallCount();
 		}
 	}
